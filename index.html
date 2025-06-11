@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>watchME</title>
+        <link href="reset.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="#streaming">Streaming</a></li>
+                <li><a href="#movies">Movies</a></li>
+                <li><a href="#food">Food</a></li>
+                <li><a href="#wheel">Spin Wheel</a></li>
+                <li><button id="theme-button">🌛 Toggle Dark Mode</button></li>
+                <li><button id="reduce-motion-button">Reduce Motion</button></li>
+            </ul>
+        </nav>
+
+        <!-- Header Section -->
+        <header class="header-container">
+            <img id="header-img" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExaDRiZXE3YmloenNla203d3Z2OWZkMHR2OWF3dmowY2N0dWVoMnlsaSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/FU8NV7tdIuL9Vra0DE/giphy.gif"/>
+            <div class="header-item">
+                <h1>Movie Night ⋆. 𐙚 ˚</h1>
+                <h2>Movie || Relax || Friends ♡</h2>
+            </div>
+            <div class="header-item">
+                <h2>Are you looking for...</h2>
+                <button type="button">Schedule</button>
+                <button type="button">About Pookie Pie</button>
+            </div>
+        </header>
+
+        <!-- About Section -->
+        <section id="streaming" class="about">
+            <h2>Streaming Event</h2>
+            <p>Watching on</p>
+            <div class="platforms-container">
+                <img alt="Netflix" src="./img/netflix.jpg"/>
+                <img alt="Hulu" src="./img/hulu.jpg"/>
+                <img alt="HBOmax" src="./img/hbomax.png"/>
+            </div>
+
+            <div id="food">
+                <h3>Are you looking for some snacks and drinks?</h3>
+                <h4>Food of the day</h4>
+                <ul class="food-list">
+                    <li> <b>1:</b> <i>Mango Smoothies with Honey Boba 🥛☕🍻🍵</i></li>
+                    <li> <b>2:</b> <i>Caramel Popcorn 🍿</i></li>
+                    <li> <b>3:</b> <i>Crunchy Chicken Nugget 🍗</i></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Schedule Section -->
+        <section id="movies" class="schedule">
+            <h2>Movie Choices</h2>
+            <h4>Today's Show</h4>
+            <ul>
+                <li>Watching Movie</li>
+                <li>Doing Homework!!!</li>
+            </ul>
+            
+            <div class="movie-category">
+                <h3>Cartoons</h3>
+                <p>Choices of Day</p>
+                <div class="movie-grid">
+                    <img alt="Lilo and Stitch" src="./img/p_liloandstitch_19755_0ba5c55e.jpeg"/>
+                    <img alt="Finding Nemo" src="./img/nemo.jpeg"/>
+                </div>
+            </div>
+
+            <div class="movie-category">
+                <h3>Studio Ghibli Movie</h3>
+                <p>Choices of the day</p>
+                <div class="movie-grid">
+                    <img alt="Spirited Away" src="./img/spiritedaway.jpg"/>
+                    <img alt="Arrietty" src="./img/ArriettyPoster.jpg"/>
+                    <img alt="Howl's Moving Castle" src="./img/Howls-Moving-Castle.jpg"/>
+                    <img alt="My Neighbor Totoro" src="./img/totoro.jpg"/>
+                    <img alt="Ponyo" src="./img/ponyoposter.jpg"/>
+                </div>
+            </div>
+
+            <div class="movie-category">
+                <h3>Superhero's Movies</h3>
+                <p>Choices of Day</p>
+                <img alt="Avengers" src="./img/avengers.jpg"/>
+            </div>
+        </section>
+
+        <!-- Links Section -->
+        <section id="wheel" class="links">
+            <h2>Spin the Wheel</h2>
+            <a class="block" href="https://wheelofnames.com/">
+                <article>
+                    <h3>pickone</h3>
+                    <p>You can only spin the wheel once, and cannot change it (add any if you want)</p>
+                </article>
+            </a>
+        </section>
+
+        <!-- RSVP Section -->
+        <div id="rsvp">
+            <h2>RSVP for Movie Night</h2>
+            <p id="rsvp-count">⭐ 0 people have RSVP'd to this event!</p>
+            <div class="rsvp-container">
+                <div class="rsvp-para">
+                    <p>Join us for an unforgettable Movie Night under the stars! Whether you're a fan of cartoons, Studio Ghibli classics, or superhero blockbusters, there's something for everyone. RSVP now to secure your spot and enjoy tasty snacks like mango smoothies and caramel popcorn with friends! 🌟</p>
+                </div>
+                <div class="rsvp-participants">
+                    <!-- <p>🎟️ DJ from Texas has RSVP'd.</p>
+                    <p>🎟️ Amy from New York has RSVP'd.</p>
+                    <p>🎟️ Teresa from Montana has RSVP'd.</p> -->
+                </div>
+            </div>
+
+            <!-- Sign RSVP Form -->
+            <div class="form-container">
+                <form id="rsvp-form" title="rsvp-form">
+                    <label for="rsvp-name">Name:</label>
+                    <input type="text" id="rsvp-name" name="name" required>
+                    
+                    <label for="rsvp-email">Email:</label>
+                    <input type="email" id="rsvp-email" name="email" required>
+                    
+                    <label for="rsvp-state">Home State:</label>
+                    <input type="text" id="rsvp-state" name="state" required>
+                </form>
+                <!-- Submit Button -->
+                <button id="rsvp-button">Submit RSVP</button>
+            </div>
+        </div>
+
+        <!-- Success Modal -->
+        <div id="success-modal" class="modal">
+            <div class="modal-container">
+                <div id="modal-item">
+                    <p id="modal-text">Thanks for RSVPing! We can't wait to see you!</p>
+                    <button id="modal-close">Close</button>
+                </div>
+                <div id="modal-item">
+                    <img id="modal-img" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdTdvMjgyNXJjbmRxdWZtaXE1NGVldXduZ2M3bnQ3MjB5cHlmejhlbyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/VkdsbvJeEThoA/giphy.gif" alt="Confirmation animation">
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="https://www.imdb.com/" target="_blank">IMDb</a> | 
+            <a href="https://www.rottentomatoes.com/" target="_blank">Rotten Tomatoes</a> | 
+            <a href="https://www.netflix.com/" target="_blank">Netflix</a>
+            <p>© 2025 CPP Del Sol Movie Night Event</p>
+        </footer>
+        <script src="index.js" defer></script>
+    </body>
+</html>
